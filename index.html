@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Evo-Agent introduces a brain-inspired learning paradigm that integrates context-augmented MLLMs and perceptual world models via dynamic communication slots, enabling embodied agents to robustly understand, adapt, and act in dynamic real-world environments.">
+  <meta property="og:title" content="Building Embodied EvoAgent: A Brain-inspired Paradigm for Bridging Multimodal Large Models and World Models"/>
+  <meta property="og:description" content="Evo-Agent introduces a brain-inspired learning paradigm that integrates context-augmented MLLMs and perceptual world models via dynamic communication slots, enabling embodied agents to robustly understand, adapt, and act in dynamic real-world environments."/>
+  <meta property="og:url" content="https://Feliciaxyao.github.io/EvoAgent/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/logo_banner.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Building Embodied EvoAgent: A Brain-inspired Paradigm for Bridging Multimodal Large Models and World Models">
+  <meta name="twitter:description" content="Evo-Agent introduces a brain-inspired learning paradigm that integrates context-augmented MLLMs and perceptual world models via dynamic communication slots, enabling embodied agents to robustly understand, adapt, and act in dynamic real-world environments.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/logo_banner.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Embodied agent, Evolution, Multimodal large language model, World model, Brain-inspired">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Building Embodied EvoAgent: A Brain-inspired Paradigm for Bridging Multimodal Large Models and World Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <span style="font-weight: bold;">
+                Building Embodied EvoAgent
+                <img src="static/images/logo.png" alt="EvoAgent Logo"
+                     style="height: 1.2em; vertical-align: middle; margin-left: 4px; margin-right: 2px;">:
+              </span>
+              <br>
+                A Brain-inspired Paradigm for Bridging Multimodal Large Models and World Models
+            </h1>                                
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=y1nOY24AAAAJ" target="_blank">Junyu Gao</a><sup>1,2,*</sup>
+                <a href="mailto:junyu.gao@nlpr.ia.ac.cn" title="Contact Author">
+                          <span style="font-size: 0.9em;">&#9993;</span>
+                </a>,
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=dTx7sN8AAAAJ" target="_blank">Xuan Yao</a><sup>1,2,*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=rCGsLtcAAAAJ" target="_blank">Yong Rui</a><sup>3</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://scholar.google.com/citations?user=hI9NRDkAAAAJ" target="_blank">Changsheng Xu</a><sup>1,2,4,†</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                      <br>
+                      <span><sup>1</sup> State Key Laboratory of Multimodal Artificial Intelligence Systems (MAIS), <br> Institute of Automation, Chinese Academy of Sciences (CASIA), Beijing, China</span><br>
+                      <span><sup>2</sup> School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS), Beijing, China</span><br>
+                      <span><sup>3</sup> Lenovo Research, Lenovo Group Ltd., Beijing, China</span><br>
+                      <span><sup>4</sup> Peng Cheng Laboratory, Shenzhen, China</span><br>
+                    </span>
+                    <span class="eql-cntrb"><small><br>
+                      <sup>*</sup> Equal Contribution.
+                      <sup>†</sup> Corresponding Author.<br><br>
+                    </small></span>
+                    <span class="author-block"><big>
+                      <strong>ACM MM 2025</strong>
+                    </span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="static/pdfs/MM2025-CameraReady.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/MM2025-supp.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image section -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <img src="static/images/motivation.png" alt="Teaser image" style="max-width: 90%; height: auto;">
+      <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
+        The motivation behind our proposed brain-inspired embodied evolutionary agent stems from the hypothesis that Multimodal Large Language Model (MMLM) and World Model(WM) can functionally emulate the distinct roles of the left and right cerebral hemispheres, while a communication module enables embodied task execution.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Embodied artificial intelligence has rapidly developed under the impetus of multimodal learning, robotics, and cognitive science, demonstrating great potential in fields such as navigation and manipulation. However, building embodied agents that can robustly operate in diverse and dynamic environments still faces challenges, such as handling partial observability and environmental adaptability. Multimodal large language models (MLLMs) are vital for embodied intelligence due to their ability to process multimodal information, but they encounter difficulties in understanding spatial environments and performing dynamic decisions and evolution. Inspired by the functional specialization of the left and right hemispheres of the human brain, this paper proposes <strong> a learning and evolution paradigm for embodied agents</strong>. The method designs an embodied context-augmented MLLM to simulate the language processing and logical analysis capabilities of the left hemisphere, responsible for understanding instructions and visual scenes. At the same time, it constructs a perceptual context-guided world model based on the recurrent state space model to simulate the spatial perception and holistic thinking functions of the right hemisphere, capturing environmental dynamics and predicting future states. By simulating the communication function of the corpus callosum, we propose dynamic communication slots for efficient information exchange between MLLMs and the world model, which also allows the agent to quickly adapt to dynamic environments without requiring extensive computational resources. Experiments show that the proposed paradigm significantly improves the performance of embodied agents in a series of tasks and enhances their generalization ability in zero-shot tasks through embodied exploration experience and online evolution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+
+
+
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-white">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Overview</h2>
+      <div class="has-text-centered" style="margin-top: 1em; margin-bottom: 1em;">
+        <figure class="image" style="max-width: 70%; margin: 0 auto;">
+          <img src="static/images/task.png" alt="EvoAgent Overview">
+          <figcaption style="font-size: 0.9em; color: #666;">
+            <i>Figure:</i> We aim to construct an embodied evo-agent that leverages in-domain task experience to enhance its zero-shot generalization capability on out-of-domain yet related tasks.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+<!-- Method-->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Method</h2>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <video controls autoplay muted loop style="max-width: 100%; border-radius: 8px;">
+            <source src="static/videos/Evoagent.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="has-text-left" style="margin-top: 1.5em; margin-bottom: 1.5em;">
+        <p style="font-size: 1.45rem; color: #000; max-width: 1200px; margin: 0 auto;">
+          Our framework comprises three bio-inspired modules:  <br>
+          &emsp; (1) <strong>EC-MLLM🗣️ (left hemisphere)</strong> processes language-visual inputs for task understanding;  <br>
+          &emsp; (2) <strong>PC-WM🌍 (right hemisphere)</strong> models environment dynamics through recurrent state space model;  <br>
+          &emsp; (3) <strong>DCS🔄 (corpus callosum)</strong> enables inter-module communication via bidirectional message passing.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Method -->
+
+
+
+
+<!-- Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+    <h2 class="title is-3">Results</h2>
+
+    <div class="has-text-left" style="margin-top: 1.5em; margin-bottom: 1.5em;">
+      <p style="font-size: 1.45rem; color: #000; max-width: 1200px; margin: 0 auto;">
+        In this section, we evaluate the capabilities of embodied execution, generalization, and evolution of the brain-inspired embodied evolutionary agent (BEEA) proposed in this paper. Firstly, training on basic embodied tasks such as navigation enhances the effectiveness of the foundation model. Subsequently, we conduct zero-shot generalization across diverse embodied tasks, validating the proposed paradigm's contribution to improving embodied execution and spatial intelligence capabilities. 
+      </p>
+    </div>
+
+      <div id="Results" class="carousel results-carousel">
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/results/Table1.png" alt="MY ALT TEXT" style="margin: auto; display: block; max-width: 80%;"/>
+          <h3 class="subtitle has-text-centered" style="margin-top: 1em;">
+            <i>Figure R1:</i> Overall comparison with specialized models and the unified baseline model NaviLLM on in-domain tasks. We report GP for CVDN,  SPL for SOON, R2R, and REVERIE, and report EM Accuracy for ScanQA. * indicates experimental results that we have reproduced.
+          </h3>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/results/Table2.png" alt="MY ALT TEXT" style="margin: auto; display: block;"/>
+          <h3 class="subtitle has-text-centered" style="margin-top: 1em;">
+            <i>Figure R2:</i> Comparative results of parameter-efficient fine-tuning for multiple MMLMs on in-domain datasets.
+          </h3>
+        </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/results/Table3.png" alt="MY ALT TEXT" style="margin: auto; display: block;"/>
+          <h3 class="subtitle has-text-centered" style="margin-top: 1em;">
+            <i>Figure R3:</i> Task success rates on 3 subsets of EB-ALFRED, EB-Habitat,EB-Navigation, and EB-Manipulation of EmbodiedBench. GPT-4o and Claude-3.5 are SoTA proprietary MLLMs for reference. Superior results compared to baselines are shown in bold.
+        </h3>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/results/Table4.png" alt="MY ALT TEXT" style="margin: auto; display: block; max-width: 50%;"/>
+        <h3 class="subtitle has-text-centered" style="margin-top: 0.5em;">
+          <i>Figure R4:</i> Evaluation on VSI-Bench. † indicates results on VSI-Bench (tiny) set.
+        </h3>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/results/Table5.png" alt="MY ALT TEXT" style="margin: auto; display: block; max-width: 70%;"/>
+        <h3 class="subtitle has-text-centered" style="margin-top: 1em;">
+          <i>Figure R5:</i> Ablation study of the proposed BEEA.
+        </h3>
+      </div>
+  </div>
+  <div class="has-text-left" style="margin-top: 1.5em; margin-bottom: 1.5em;">
+    <p style="font-size: 1.45rem; color: #000; max-width: 1200px; margin: 0 auto;">
+      For detailed experimental settings and comparative results, please refer to the <i>Supplementary Materials</i>. 
+    </p>
+  </div>
+</div>
+</div>
+</section>
+<!-- End Results -->
+
+
+
+<!-- Visualization Section (Static Images) -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Visualization</h2>
+      <br>
+
+      <!-- Image 1 -->
+      <div class="has-text-centered" style="margin-bottom: 2em;">
+        <img src="static/results/vis1.png" alt="Figure V1" style="max-width: 100%; height: auto;" />
+        <h3 class="subtitle has-text-centered" style="margin-top: 0.5em; color: #666;">
+          <i>Figure V1:</i> Trajectory visualization comparison with NaviLLM on the REVERIE dataset.
+        </h3>
+      </div>
+
+      <!-- Image 2 -->
+      <br>
+      <div class="has-text-centered" style="margin-bottom: 2em;">
+        <img src="static/results/vis2.png" alt="Figure V2" style="max-width: 80%; height: auto;" />
+        <h3 class="subtitle has-text-centered" style="margin-top: 0.5em; color: #666;">
+          <i>Figure V2:</i> Embodied execution examples in EB-ALFRED and EB-Manipulation using our BEEA with InternVL2.5-78B.
+        </h3>
+      </div>
+
+      <!-- Image 3 -->
+      <br>
+      <div class="has-text-centered" style="margin-bottom: 2em;">
+        <img src="static/results/vis3.png" alt="Figure V3" style="max-width: 85%; height: auto;" />
+        <h3 class="subtitle has-text-centered" style="margin-top: 0.5em; color: #666;">
+          <i>Figure V3:</i> Qualitative comparison on the VSI-Bench dataset using the InternVL2.5-78B model.
+        </h3>
+      </div>
+
+      <!-- Text under all images -->
+      <div class="has-text-left" style="margin-top: 1.5em; margin-bottom: 1.5em;">
+        <p style="font-size: 1.45rem; color: #000; max-width: 1200px; margin: 0 auto;">
+          For more qualitative analysis, please refer to the <i>Supplementary Materials</i>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@InProceedings{Gao_2025_ACMMM,
+        author    = {Junyu Gao, Xuan Yao, Yong Rui and Changsheng Xu},
+        title     = {Building Embodied EvoAgent: A Brain-inspired Paradigm for Bridging Multimodal Large Models and World Models},
+        booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM)},
+        year      = {2025},
+    }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
