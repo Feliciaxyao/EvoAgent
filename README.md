@@ -7,7 +7,7 @@
 ![image](static/images/framework.png)
 
 ## Acknowledgments
-Parts of this project page were adopted from the [Academic Project Page Template]([https://nerfies.github.io/](https://github.com/eliahuhorwitz/Academic-project-page-template?tab=readme-ov-file) page.
+Parts of this project page were adopted from the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template?tab=readme-ov-file) page.
 
 ## Citation
 If you find this project useful in your research, please consider cite:
